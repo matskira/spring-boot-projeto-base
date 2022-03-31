@@ -1,6 +1,5 @@
 package io.github.matskira.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import io.github.matskira.model.Cliente;
@@ -11,7 +10,6 @@ public class ClienteService {
 
 	private ClienteRepository repository;
 	
-	@Autowired
 	public ClienteService(ClienteRepository clienteRepository) {
 		this.repository = clienteRepository; 
 	};
